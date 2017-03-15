@@ -31,13 +31,16 @@ public abstract class CEnemyMove : MonoBehaviour
 
     protected NavMeshAgent m_NvAgent;     // 네비게이션
 
+    public int test;
+
     void Awake()
     {
         m_State = State.Idle;
         m_Speed = 0;
         m_IsDie = false;
         m_AttackCheck = false;
-        
+
+        test = 10;
     }
 
     void Start()
